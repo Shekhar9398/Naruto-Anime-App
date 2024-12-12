@@ -1,0 +1,6 @@
+framework module Pods_NarutoAnime_NarutoAnimeUITests {
+  umbrella header "Pods-NarutoAnime-NarutoAnimeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

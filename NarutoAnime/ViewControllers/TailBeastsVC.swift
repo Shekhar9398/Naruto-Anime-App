@@ -1,5 +1,6 @@
 
 import UIKit
+import SDWebImage
 
 class TailBeastsVC: UIViewController {
     
@@ -9,7 +10,9 @@ class TailBeastsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        
+        self.view.backgroundColor = .purple
+        
         getTailBeasts()
         
         tailBeastTable.register(TailBeastCell.nib(), forCellReuseIdentifier: TailBeastCell.identifier)
@@ -43,11 +46,19 @@ extension TailBeastsVC : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tailBeastTable.dequeueReusableCell(withIdentifier: TailBeastCell.identifier, for: indexPath) as! TailBeastCell
         
-        cell.tailBeastName.text = viewModel.tailBeasts[indexPath.row].name
+        cell.tailBeastName.text = "Tail Beast -> " + viewModel.tailBeasts[indexPath.row].name
+        cell.tailBeastName.font = UIFont(name: "futura", size: 20)
+        
+        let imageStringArr = viewModel.tailBeasts[indexPath.row].images
+        
+        for imageString in imageStringArr {
+            cell.tailBeastImage.sd_setImage(with: URL(string: imageString))
+        }
+        cell.tailBeastImage.layer.cornerRadius = 10
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 320
     }
 }
