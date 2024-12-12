@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iD6-oK-nqy">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tail BeastsVC-->
+        <scene sceneID="d5a-5h-fbG">
+            <objects>
+                <viewController storyboardIdentifier="TailBeastsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HMg-gM-Hzi" customClass="TailBeastsVC" customModule="NarutoAnime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVg-zY-x9C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-1j-4Cq">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TailBeastCell" rowHeight="111" id="g6M-kk-3fi">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g6M-kk-3fi" id="iO9-7q-qUI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NnZ-0u-mv5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TDh-1j-4Cq" firstAttribute="top" secondItem="NnZ-0u-mv5" secondAttribute="top" id="2If-iV-YGn"/>
+                            <constraint firstItem="TDh-1j-4Cq" firstAttribute="leading" secondItem="NnZ-0u-mv5" secondAttribute="leading" id="B2W-kd-TfY"/>
+                            <constraint firstItem="NnZ-0u-mv5" firstAttribute="bottom" secondItem="TDh-1j-4Cq" secondAttribute="bottom" id="BOg-Df-GCp"/>
+                            <constraint firstItem="NnZ-0u-mv5" firstAttribute="trailing" secondItem="TDh-1j-4Cq" secondAttribute="trailing" id="lpq-D6-6Y5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="QoG-yn-zPf"/>
+                    <connections>
+                        <outlet property="tailBeastTable" destination="TDh-1j-4Cq" id="n6u-bo-ddV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lW6-bB-sDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1280.1526717557251" y="328.16901408450707"/>
+        </scene>
+        <!--CharactersVC-->
+        <scene sceneID="7VE-2F-woA">
+            <objects>
+                <viewController storyboardIdentifier="CharactersVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VrL-er-9Hc" customClass="CharactersVC" customModule="NarutoAnime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xv9-CG-cCB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-qU-H0R">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CharacterCell" rowHeight="85" id="vbA-Rd-w8H">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vbA-Rd-w8H" id="D4L-nX-KfS">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YEK-5x-bR7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YEK-5x-bR7" firstAttribute="bottom" secondItem="cIg-qU-H0R" secondAttribute="bottom" id="9D1-GI-6Yc"/>
+                            <constraint firstItem="cIg-qU-H0R" firstAttribute="top" secondItem="YEK-5x-bR7" secondAttribute="top" id="B54-dU-AF3"/>
+                            <constraint firstItem="cIg-qU-H0R" firstAttribute="leading" secondItem="YEK-5x-bR7" secondAttribute="leading" id="W79-pV-oux"/>
+                            <constraint firstItem="YEK-5x-bR7" firstAttribute="trailing" secondItem="cIg-qU-H0R" secondAttribute="trailing" id="aQk-dB-Yap"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="Lsa-Pc-yP8"/>
+                    <connections>
+                        <outlet property="characterTable" destination="cIg-qU-H0R" id="W6E-62-dsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkA-hJ-sLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1280.1526717557251" y="-558.45070422535218"/>
+        </scene>
+        <!--Tab Bar Vc-->
+        <scene sceneID="HRk-3B-3z0">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iD6-oK-nqy" customClass="TabBarVc" customModule="NarutoAnime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="b2i-iQ-Swb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="iconTabBar" destination="b2i-iQ-Swb" id="BMc-yl-9jy"/>
+                        <segue destination="VrL-er-9Hc" kind="relationship" relationship="viewControllers" id="quI-1V-J5c"/>
+                        <segue destination="HMg-gM-Hzi" kind="relationship" relationship="viewControllers" id="i7A-st-YYj"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="t3V-kv-tIc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4B-VS-BVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2570" y="-137"/>
+        </scene>
+        <!--AkatsukiVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AkatsukiVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AkatsukiVC" customModule="NarutoAnime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="JLt-qj-Ijd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402" y="-137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
