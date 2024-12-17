@@ -10,6 +10,9 @@
 		0BD3E96419A514F8FACFDACB /* Pods_NarutoAnimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C3B685E0951626598A5E16 /* Pods_NarutoAnimeTests.framework */; };
 		507A05692D0B553B00DDB17E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 507A05682D0B553B00DDB17E /* SDWebImage */; };
 		50E192412D118236003B7888 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E192402D118236003B7888 /* CharacterViewModel.swift */; };
+		50E192432D119681003B7888 /* AkatsukiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E192422D119681003B7888 /* AkatsukiViewModel.swift */; };
+		50E192462D1197D7003B7888 /* AkatsukiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E192442D1197D7003B7888 /* AkatsukiCell.swift */; };
+		50E192472D1197D7003B7888 /* AkatsukiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E192452D1197D7003B7888 /* AkatsukiCell.xib */; };
 		6BEE5C6B5AA455EFA02E505B /* Pods_NarutoAnime_NarutoAnimeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADCD1010E05ECE23DDF3547 /* Pods_NarutoAnime_NarutoAnimeUITests.framework */; };
 		844DBACA2D09934800C4203C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DBAC92D09934800C4203C /* AppDelegate.swift */; };
 		844DBACC2D09934800C4203C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DBACB2D09934800C4203C /* SceneDelegate.swift */; };
@@ -55,6 +58,9 @@
 		1ADCD1010E05ECE23DDF3547 /* Pods_NarutoAnime_NarutoAnimeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NarutoAnime_NarutoAnimeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50510D6F2D0B549200451446 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E192402D118236003B7888 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		50E192422D119681003B7888 /* AkatsukiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkatsukiViewModel.swift; sourceTree = "<group>"; };
+		50E192442D1197D7003B7888 /* AkatsukiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkatsukiCell.swift; sourceTree = "<group>"; };
+		50E192452D1197D7003B7888 /* AkatsukiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AkatsukiCell.xib; sourceTree = "<group>"; };
 		62C3B685E0951626598A5E16 /* Pods_NarutoAnimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NarutoAnimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E69ECF0510D6A92A880946 /* Pods-NarutoAnime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NarutoAnime.release.xcconfig"; path = "Target Support Files/Pods-NarutoAnime/Pods-NarutoAnime.release.xcconfig"; sourceTree = "<group>"; };
 		844DBAC62D09934800C4203C /* NarutoAnime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarutoAnime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +240,7 @@
 			children = (
 				84D1EBA12D0B02FD00D0D8CC /* TailBeastViewModel.swift */,
 				50E192402D118236003B7888 /* CharacterViewModel.swift */,
+				50E192422D119681003B7888 /* AkatsukiViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -245,6 +252,8 @@
 				84F3C02F2D0AC0B100A57520 /* CharacterCell.xib */,
 				84D1EBA52D0B168000D0D8CC /* TailBeastCell.swift */,
 				84D1EBA62D0B168000D0D8CC /* TailBeastCell.xib */,
+				50E192442D1197D7003B7888 /* AkatsukiCell.swift */,
+				50E192452D1197D7003B7888 /* AkatsukiCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -378,6 +387,7 @@
 				844DBAD32D09934A00C4203C /* Assets.xcassets in Resources */,
 				84D1EBA82D0B168000D0D8CC /* TailBeastCell.xib in Resources */,
 				844DBAD12D09934800C4203C /* Main.storyboard in Resources */,
+				50E192472D1197D7003B7888 /* AkatsukiCell.xib in Resources */,
 				84F3C0312D0AC0B100A57520 /* CharacterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,10 +502,12 @@
 				844DBB032D099B3B00C4203C /* AkatsukiVC.swift in Sources */,
 				844DBAFA2D09938700C4203C /* CharactersVC.swift in Sources */,
 				844DBACA2D09934800C4203C /* AppDelegate.swift in Sources */,
+				50E192432D119681003B7888 /* AkatsukiViewModel.swift in Sources */,
 				84D1EBA42D0B039600D0D8CC /* TailBeastModel.swift in Sources */,
 				50E192412D118236003B7888 /* CharacterViewModel.swift in Sources */,
 				844DBB0D2D09B1B800C4203C /* NetworkManager.swift in Sources */,
 				84D1EBA22D0B02FD00D0D8CC /* TailBeastViewModel.swift in Sources */,
+				50E192462D1197D7003B7888 /* AkatsukiCell.swift in Sources */,
 				84D1EBA72D0B168000D0D8CC /* TailBeastCell.swift in Sources */,
 				84F3C0302D0AC0B100A57520 /* CharacterCell.swift in Sources */,
 				844DBB012D0994B000C4203C /* TailBeastsVC.swift in Sources */,

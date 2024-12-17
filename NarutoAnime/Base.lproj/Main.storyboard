@@ -118,14 +118,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SXg-dK-vR6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AkatsukiCell" rowHeight="105" id="vny-Ck-Jkz">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vny-Ck-Jkz" id="u6E-d8-IB1">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SXg-dK-vR6" secondAttribute="bottom" id="CkY-58-afD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SXg-dK-vR6" secondAttribute="trailing" id="VKa-UR-too"/>
+                            <constraint firstItem="SXg-dK-vR6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nO0-wk-yWV"/>
+                            <constraint firstItem="SXg-dK-vR6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rF9-q9-wej"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="JLt-qj-Ijd"/>
+                    <connections>
+                        <outlet property="akatsukiTable" destination="SXg-dK-vR6" id="0N1-8G-5o0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-404" y="-137"/>
+            <point key="canvasLocation" x="-405.34351145038164" y="-137.32394366197184"/>
         </scene>
     </scenes>
     <resources>

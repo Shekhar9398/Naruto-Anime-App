@@ -9,13 +9,9 @@ class TailBeastViewModel {
             
             switch result {
             case .success(let response):
-//                response.tailedBeasts.forEach { val in
-//                    val.images
-//                }
                 self.tailBeasts = response.tailedBeasts
                 print("TailBeasts Data --> \(tailBeasts)")
                 completion(.success(()))
-                
                 
             case .failure(let error):
                 completion(.failure(error))
