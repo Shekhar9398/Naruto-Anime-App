@@ -11,7 +11,7 @@ class TailBeastsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .purple
+        self.view.backgroundColor = .black
         
         getTailBeasts()
         
@@ -46,19 +46,26 @@ extension TailBeastsVC : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tailBeastTable.dequeueReusableCell(withIdentifier: TailBeastCell.identifier, for: indexPath) as! TailBeastCell
         
-        cell.tailBeastName.text = "Tail Beast -> " + viewModel.tailBeasts[indexPath.row].name
-        cell.tailBeastName.font = UIFont(name: "futura", size: 20)
-        
         let imageStringArr = viewModel.tailBeasts[indexPath.row].images
         
         for imageString in imageStringArr {
             cell.tailBeastImage.sd_setImage(with: URL(string: imageString))
         }
-        cell.tailBeastImage.layer.cornerRadius = 10
+        
+        // Make the image circular
+        cell.tailBeastImage.layer.cornerRadius = cell.tailBeastImage.frame.size.width / 2
+        cell.tailBeastImage.clipsToBounds = true
+
+        // Add a circular border (stroke) around the image
+        cell.tailBeastImage.layer.borderWidth = 5.0
+        cell.tailBeastImage.layer.borderColor = UIColor.orange.cgColor
+        
+        cell.halfBottomJoinImage.image = UIImage(named: "shape")
+        cell.halftTopJoinImage.image = UIImage(named: "shape")
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 320
+        return 360
     }
 }

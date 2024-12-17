@@ -9,6 +9,10 @@ class CharacterCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Image styling
+             characterImage.layer.cornerRadius = 20
+             characterImage.clipsToBounds = true
+             characterImage.contentMode = .scaleAspectFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -11,7 +11,7 @@ struct TailBeastModel : Codable {
 }
 
 // MARK: - TailedBeast
-struct TailedBeast: Codable {
+struct TailedBeast: Codable{
     let id: Int
     let name: String
     let images: [String]

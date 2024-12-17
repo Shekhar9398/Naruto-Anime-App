@@ -4,7 +4,8 @@ import UIKit
 class TailBeastCell: UITableViewCell {
 
     @IBOutlet weak var tailBeastImage: UIImageView!
-    @IBOutlet weak var tailBeastName: UILabel!
+    @IBOutlet weak var halfBottomJoinImage: UIImageView!
+    @IBOutlet weak var halftTopJoinImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
